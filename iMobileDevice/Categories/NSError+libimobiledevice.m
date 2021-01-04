@@ -30,8 +30,8 @@
 	else if (errorCode == IDEVICE_E_NOT_ENOUGH_DATA) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Not enough data"};
 	}
-	else if (errorCode == IDEVICE_E_BAD_HEADER) {
-		userInfo = @{NSLocalizedDescriptionKey: @"Bad header received"};
+	else if (errorCode == IDEVICE_E_TIMEOUT) {
+		userInfo = @{NSLocalizedDescriptionKey: @"IDEVICE_E_TIMEOUT"};
 	}
 	else if (errorCode == IDEVICE_E_SSL_ERROR) {
 		userInfo = @{NSLocalizedDescriptionKey: @"An SSL error occurred"};
@@ -62,25 +62,25 @@
 	else if (errorCode == LOCKDOWN_E_DICT_ERROR) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Dict read/write incorrectly formatted"};
 	}
-	else if (errorCode == LOCKDOWN_E_START_SERVICE_FAILED) {
+	else if (errorCode == LOCKDOWN_E_RECEIVE_TIMEOUT) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Lockdownd service failed to start"};
 	}
-	else if (errorCode == LOCKDOWN_E_NOT_ENOUGH_DATA) {
+	else if (errorCode == LOCKDOWN_E_MUX_ERROR) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Not enough data"};
 	}
-	else if (errorCode == LOCKDOWN_E_SET_VALUE_PROHIBITED) {
+	else if (errorCode == LOCKDOWN_E_NO_RUNNING_SESSION) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Unable to set value, prohibited"};
 	}
-	else if (errorCode == LOCKDOWN_E_GET_VALUE_PROHIBITED) {
+	else if (errorCode == LOCKDOWN_E_GET_PROHIBITED) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Unable to get value, prohibited"};
 	}
-	else if (errorCode == LOCKDOWN_E_REMOVE_VALUE_PROHIBITED) {
+	else if (errorCode == LOCKDOWN_E_REMOVE_PROHIBITED) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Unable to remove value, prohibited"};
 	}
 	else if (errorCode == LOCKDOWN_E_MUX_ERROR) {
 		userInfo = @{NSLocalizedDescriptionKey: @"MUX error occured"};
 	}
-	else if (errorCode == LOCKDOWN_E_ACTIVATION_FAILED) {
+	else if (errorCode == LOCKDOWN_E_SESSION_ACTIVE) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Activation error occured"};
 	}
 	else if (errorCode == LOCKDOWN_E_PASSWORD_PROTECTED) {
@@ -98,7 +98,7 @@
 	else if (errorCode == LOCKDOWN_E_INVALID_ACTIVATION_RECORD) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Invalid activation record"};
 	}
-	else if (errorCode == LOCKDOWN_E_PAIRING_DIALOG_PENDING) {
+	else if (errorCode == LOCKDOWN_E_PAIRING_DIALOG_RESPONSE_PENDING) {
 		userInfo = @{NSLocalizedDescriptionKey: @"Pairing dialog pending"};
 	}
 	else if (errorCode == LOCKDOWN_E_USER_DENIED_PAIRING) {
